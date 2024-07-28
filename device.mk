@@ -31,18 +31,16 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Recovery modules/dependencies
-#TARGET_RECOVERY_DEVICE_MODULES += \
+TARGET_RECOVERY_DEVICE_MODULES += \
     libdmabufheap \
     libion \
-    libxml2 \
     libnetutils \
     vendor.display.config@1.0 \
     vendor.display.config@2.0 \
 
-#RECOVERY_LIBRARY_SOURCE_FILES += \
+RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libdmabufheap.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so 
@@ -58,3 +56,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 32
+
+# Enable Fuse Passthrough
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.fuse.passthrough.enable=true
