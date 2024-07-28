@@ -114,19 +114,22 @@ BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system system system vendor product odm system_ext vendor_dlkm
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
- # Root
+# System as root
 BOARD_ROOT_EXTRA_FOLDERS := \
-    carrier \
-    efs \
-    omr \
-    optics \
-    prism \
-    spu \
-    persist \
-    sec_efs \
-    firmware \
-    metadata \
-
+	cache \
+	carrier \
+	data_mirror \
+	efs \
+	linkerconfig \
+	odm_dlkm \
+	oem \
+	optics \
+	postinstall \
+	prism \
+	second_stage_resources \
+	spu \
+	system_ext \
+	vendor_dlkm
 
 # Recovery
 RECOVERY_SDCARD_ON_DATA := true
