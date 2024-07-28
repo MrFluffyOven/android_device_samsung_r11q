@@ -8,7 +8,7 @@
 LOCAL_PATH := device/samsung/r11q
 
 # API levels
-PRODUCT_SHIPPING_API_LEVEL := 32
+PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Recovery modules/dependencies
-TARGET_RECOVERY_DEVICE_MODULES += \
+#TARGET_RECOVERY_DEVICE_MODULES += \
     libdmabufheap \
     libion \
     libxml2 \
@@ -39,7 +39,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     vendor.display.config@1.0 \
     vendor.display.config@2.0 \
 
-RECOVERY_LIBRARY_SOURCE_FILES += \
+#RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libdmabufheap.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
@@ -57,4 +57,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 32
+PRODUCT_TARGET_VNDK_VERSION := 33
