@@ -1,10 +1,7 @@
 # Android device tree for samsung SM-S7110 (r11q)
 
-```
-#
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+# Clone
+    https://github.com/MrFluffyOven/android_device_samsung_r11q.git
+
+# Build
+    ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_r11q-eng; mka recoveryimage
