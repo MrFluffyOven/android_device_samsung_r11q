@@ -26,10 +26,10 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # Additional
-TARGET_USES_UEFI := true
+#TARGET_USES_UEFI := true
 TARGET_IS_64_BIT := true
-TARGET_USES_64_BIT_BINDER := true
-TARGET_BOARD_SUFFIX := _64
+#TARGET_USES_64_BIT_BINDER := true
+#TARGET_BOARD_SUFFIX := _64
 TARGET_NO_BOOTLOADER := true
 
 # Board
@@ -53,18 +53,7 @@ TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 2340
 
 # cmdline
-BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 \
-						printk.devkmsg=on \
-						firmware_class.path=/vendor/firmware_mnt/image \
-						console=null \
-						bootconfig \
-						androidboot.hardware=qcom \
-						hardware=qcom \
-						androidboot.memcg=1 \
-						androidboot.usbcontroller=a600000.dwc3 \
-						androidboot.init_fatal_panic=true \
-						androidboot.selinux=permissive \
-						loop.max_part=7
+BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image console=null bootconfig androidboot.hardware=qcom hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 androidboot.init_fatal_panic=true androidboot.selinux=permissive loop.max_part=7
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
