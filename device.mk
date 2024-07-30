@@ -18,7 +18,7 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd 
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \
     update_engine_sideload \
@@ -48,7 +48,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so 
 
 # QCOM
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
