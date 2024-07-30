@@ -6,7 +6,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := e3q
+PRODUCT_RELEASE_NAME := r11q
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -26,6 +26,6 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/$(PRODUCT_R
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-S928B
+PRODUCT_MODEL := SM-S7110
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung 
