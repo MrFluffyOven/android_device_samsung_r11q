@@ -29,8 +29,8 @@ import /init.recovery.qcom_decrypt.rc
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.controller a600000.dwc3
-    #setprop prepdecrypt.setpatch true
-    #setprop prepdecrypt.loglevel 2
+    setprop prepdecrypt.setpatch true
+    setprop prepdecrypt.loglevel 2
 
 on boot 
     start health-hal-2-1
