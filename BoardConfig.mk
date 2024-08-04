@@ -172,7 +172,7 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
 TARGET_USES_MKE2FS := true
-TW_DEVICE_VERSION := TheNoobDevs_3
+TW_DEVICE_VERSION := TheNoobDevs_3.1
 
 # Logging
 TARGET_USES_LOGD := true
@@ -194,7 +194,7 @@ TARGET_COPY_OUT_PRODUCT := product
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Modules
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules/1.1)\")
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
