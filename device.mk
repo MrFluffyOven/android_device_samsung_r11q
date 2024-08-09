@@ -20,11 +20,11 @@ PRODUCT_PACKAGES += \
 
 # BOOT
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-impl.recovery \
-    android.hardware.boot@1.2-service
+    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-impl.recovery \
+    android.hardware.boot@1.0-service
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \
     update_engine_sideload \
