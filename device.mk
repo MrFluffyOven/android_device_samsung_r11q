@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
     fastbootd 
 
 # BOOT
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-impl.recovery \
     android.hardware.boot@1.0-service
@@ -35,23 +35,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
-
-# Recovery modules/dependencies
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libdmabufheap \
-    libion \
-    libxml2 \
-    libnetutils \
-    vendor.display.config@1.0 \
-    vendor.display.config@2.0 \
-
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libdmabufheap.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
-    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
-    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so 
 
 # QCOM
 PRODUCT_PACKAGES += \

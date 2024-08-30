@@ -25,11 +25,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 import /init.recovery.qcom_decrypt.rc
+import /init.recovery.samsung.rc
 
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.controller a600000.dwc3
-    setprop prepdecrypt.setpatch true
     setprop prepdecrypt.loglevel 2
 
 on boot 
@@ -46,3 +46,7 @@ on fs
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
     export ANDROID_ROOT /system_root
+
+on post-fs-data
+#   exec - root -- /vendor/bin/init.insmod.sh
+    exec - root -- /vendor/bin/init.insmod.recovery.sh
